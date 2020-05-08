@@ -7,10 +7,6 @@ navMenuIcon.addEventListener("click", function () {
     this.classList.toggle("toggle");
     navbarCategories.classList.toggle("active");
     navbarShopItems.classList.toggle("active")
-    
-    //! Second Option the responsive view navbar 
-    // navbarCategories.classList.toggle("dNone");
-    // navbarShopItems.classList.toggle("dNone")
 });
 
 // Nav Menu Burger Animation and Responsive Menu End 

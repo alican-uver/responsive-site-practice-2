@@ -20,86 +20,106 @@
         }
     }
     // Section Timer End
+
  }
 
 @media screen and (max-width: 767.98px) {  // sm 
     // Navbar and header
-    ._navbar {
-        @include padding(20, 5, 5, 5);
-        @include flexCenter();
+      ._navbar{ 
+        display: flex;
         flex-direction: column;
-        position: relative;
+        margin-bottom: 30px;
         overflow-x: hidden;
-        height: 130px;
-        margin-bottom: 40px;
-    &-title {
-        h1 {
-            padding-left: 0;
-            font-size: 30px !important;
-        };
-    }
-    &-categories {
-        @include commonResSet();
-        left: 25px;
-        transform: translateX(-100%);
-        &-link {
-            font-size: 18px;
-        };
-    }
-    
-    &-shop-items {
-        @include commonResSet();
-        right: 0px;
-        padding-right: 0;
-        transform: translateX(100%);
-        &-link {
-            padding-top: 6px;
-            font-size: 18px;
+        &-title{
+            h1{
+                font-size: 30px !important;
+            }
         }
-        .cargoo-text {
-            display: none !important;
+        &-menu-icon{
+            display: block;
+            order: 1;
+            padding-top: 20px;
+            align-self: center;
         }
+        &-categories{
+            order: 3;
+            padding-top: 30px;
+            align-self: center;
+            justify-content: space-evenly;
+            width: 100%;
+            transform: translateX(100%);
+            a{
+                font-size: 20px;
+                padding-right: 20px;
+            }
+        }
+        &-shop-items{
+            order: 2;
+            align-self: center;
+            justify-content: center;
+            width: 100%;
+            transform: translateX(-100%);
+            padding-top: 30px;
+            a{
+                font-size: 20px;
+                padding-right: 35px;
+            }
+        }   
     }
 
-    &-menu-icon {
-        display: block;
-        padding-right: 10px;
-    }
-  }
-  .bottom-line {
-      display: none;
-  }
-
-  .colorful-dots-left, .colorful-dots-right {
-    display: none;
-  }
   // Navbar and Header End
-  
 
-    //! Second Option the responsive view navbar 
-    //   ._navbar{ 
-    //     display: flex;
-    //     flex-direction: column;
-    //     margin-bottom: 50px;
-    //     &-menu-icon{
-    //         display: block;
-    //         order: 1;
-    //         padding-top: 20px;
-    //         padding-bottom: 20px;
-    //     }
-    //     &-categories{
-    //         order: 2;
-    //         padding-bottom: 20px;
-    //         a{
-    //             padding-right: 15px;
-    //         }
-    //     }
-    //     &-shop-items{
-    //         order: 3;
-    //     }
-    // }
-    //! Second Option the responsive view navbar end
+    //! Second Option the responsive view navbar
+//     ._navbar {
+//         @include padding(20, 5, 5, 5);
+//         @include flexCenter();
+//         flex-direction: column;
+//         position: relative;
+//         overflow-x: hidden;
+//         height: 130px;
+//         margin-bottom: 40px;
+//     &-title {
+//         h1 {
+//             padding-left: 0;
+//             font-size: 30px !important;
+//         };
+//     }
+//     &-categories {
+//         @include commonResSet();
+//         left: 25px;
+//         transform: translateX(-100%);
+//         &-link {
+//             font-size: 18px;
+//         };
+//     }
+    
+//     &-shop-items {
+//         @include commonResSet();
+//         right: 0px;
+//         padding-right: 0;
+//         transform: translateX(100%);
+//         &-link {
+//             padding-top: 6px;
+//             font-size: 18px;
+//         }
+//         .cargoo-text {
+//             display: none !important;
+//         }
+//     }
 
+//     &-menu-icon {
+//         display: block;
+//         padding-right: 10px;
+//     }
+//   }
+//   .bottom-line {
+//       display: none;
+//   }
+//! Second Option the responsive view navbar end
+
+    .colorful-dots-left, .colorful-dots-right {
+        display: none;
+      }
 }
 
 @media screen and (max-width:992px) { // md
@@ -188,6 +208,7 @@
         &-center{
             border: 0;
             order: 1;
+            padding-bottom: 10px;
         }
 
         &-right{
