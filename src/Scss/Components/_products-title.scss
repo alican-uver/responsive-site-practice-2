@@ -1,0 +1,35 @@
+.sales-products-title{
+    text-align: center;
+    padding: 20px 0;
+    p{
+        color: $black;
+        text-transform: capitalize;
+        font-size: 20px;
+        letter-spacing: .5px;
+    }
+    .products-slider-dots{
+        span{
+            @include commonDotSet(8, 8, relative, 1);
+            cursor:pointer;
+            &:not(:nth-of-type(3)){
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+.red {
+    background-color: $dotColorRed;
+}
+
+.brown {
+    background-color: $dotColorBrown;
+}
+
+.gray {
+    background-color: $gray;
+}
+
+.blue {
+    background-color: $navy-blue;
+}

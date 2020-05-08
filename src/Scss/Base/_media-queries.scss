@@ -1,0 +1,221 @@
+@media screen and (max-width: 575.98px) {  // xs
+    .sales-products-first, .sales-products-second{
+        padding: 0;
+        .card-container:not(:nth-of-type(1)){
+            margin-top: 30px;
+        }
+    }
+
+    // Section Gifts
+    .free-delivery-card{
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    // Section Gifts End
+
+    // Section Timer
+    .button-group{
+        button{
+            margin-top: 10px
+        }
+    }
+    // Section Timer End
+ }
+
+@media screen and (max-width: 767.98px) {  // sm 
+    // Navbar and header
+    ._navbar {
+        @include padding(20, 5, 5, 5);
+        @include flexCenter();
+        flex-direction: column;
+        position: relative;
+        overflow-x: hidden;
+        height: 130px;
+        margin-bottom: 40px;
+    &-title {
+        h1 {
+            padding-left: 0;
+            font-size: 30px !important;
+        };
+    }
+    &-categories {
+        @include commonResSet();
+        left: 25px;
+        transform: translateX(-100%);
+        &-link {
+            font-size: 18px;
+        };
+    }
+    
+    &-shop-items {
+        @include commonResSet();
+        right: 0px;
+        padding-right: 0;
+        transform: translateX(100%);
+        &-link {
+            padding-top: 6px;
+            font-size: 18px;
+        }
+        .cargoo-text {
+            display: none !important;
+        }
+    }
+
+    &-menu-icon {
+        display: block;
+        padding-right: 10px;
+    }
+  }
+  .bottom-line {
+      display: none;
+  }
+
+  .colorful-dots-left, .colorful-dots-right {
+    display: none;
+  }
+  // Navbar and Header End
+  
+
+    //! Second Option the responsive view navbar 
+    //   ._navbar{ 
+    //     display: flex;
+    //     flex-direction: column;
+    //     margin-bottom: 50px;
+    //     &-menu-icon{
+    //         display: block;
+    //         order: 1;
+    //         padding-top: 20px;
+    //         padding-bottom: 20px;
+    //     }
+    //     &-categories{
+    //         order: 2;
+    //         padding-bottom: 20px;
+    //         a{
+    //             padding-right: 15px;
+    //         }
+    //     }
+    //     &-shop-items{
+    //         order: 3;
+    //     }
+    // }
+    //! Second Option the responsive view navbar end
+
+}
+
+@media screen and (max-width:992px) { // md
+    // Navbar
+    ._navbar {
+        @include padding(20, 0, 5, 3);
+        &-title{
+            h1 {
+                font-size: 20px ;
+            };
+        }
+        &-categories{
+            flex-grow: 4;
+        }
+        &-shop-items{
+            padding-right: 0;
+        }
+        
+    }
+    // Navbar End
+
+    // Section Timer
+    .button-group{
+        button:nth-of-type(3){
+            margin-top: 10px
+        }
+    }
+    // Section Timer End
+
+    // Sales Products First
+    .sales-products-first{
+        padding: 0;
+        .card-container:not(:nth-of-type(1)):not(:nth-of-type(2)){
+            margin-top: 30px;
+        }
+        img:not(.redGiftBox){
+          height: 350px;
+          object-fit: cover;
+        }
+        .product-info{
+            background-color: $navy-blue;
+            margin-top: 5px;
+            a,p{
+                color: $white;
+            }
+        }
+
+    }
+    // Sales Products First End
+
+    // Sales Products Second
+    .sales-products-second{
+        .card-container:nth-of-type(3){
+            margin-top: 40px;
+        }
+    
+        img{
+          height: 350px;
+          object-fit: cover;
+        }
+
+        button{
+            min-height: 60px;
+        }
+    }
+    // Sales Products Second End
+
+    // Gift Cards 
+    .gift-cards{
+        h3{
+            text-align: center;
+        }
+    }
+    //Gift Cards End
+
+
+    // Footer
+    .footer{
+        margin-top: 50px;
+        &-left{
+            text-align: center;
+            margin-top: 15px;
+            order: 2;
+        }
+
+        &-center{
+            border: 0;
+            order: 1;
+        }
+
+        &-right{
+            text-align: center;
+            margin-left: 0;
+            margin-top: 15px;
+            order: 3;
+            .social-media{
+                margin-top: 10px;
+            }
+        }
+
+        .more-info-title{
+            padding-bottom: 0;
+        }
+    }
+    // Footer End
+}
+
+
+@media (max-width: 1199.98px) {  // lg
+    // Section Product Categories
+    .sales-products-second{
+        button{
+            width: 100%
+        }
+    }
+    // Section Product Categories End
+}
+
+// Media Queries End //

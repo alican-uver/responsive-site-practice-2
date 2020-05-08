@@ -1,0 +1,3 @@
+1- Tasarım gelirken header kısmındaki dot' lar, resimler, iconlar gelmediği için benzer olanlarını bulup yapmaya çalıştım. Görünüm olarak benzerlik çok önemli denildiğinden colorful dot'ları elle oluşturdum ve göz kararı sayfaya yerleştirdim.  
+2- Renklerin tam kodu olmadığı için göz kararı en çok benzeyen renkleri kullanmaya çalıştım. 
+3- Navbar kısmının telefon görüntüsü için 2 adet görünüm seçeneği ekledim. 2. seçeneği görmek için;  navbar.scss içerisindeki "dNone" yorum satırlarındadır onun çıkartılması, media-queries kısmındaki yorum satırlarının kaldırılması ve javascript tarafındaki yorum satırlarının kaldırılması yeterlidir. 

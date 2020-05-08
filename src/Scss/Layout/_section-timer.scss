@@ -1,0 +1,194 @@
+.christmas-gifts {
+    position: relative;
+    .colorful-dots-left {
+        padding-left: 20px;
+        .dot {
+            @include commonDotSet(13, 13, absolute, -1);
+            &:nth-of-type(1) {
+                background-color: $dotColorBrown;
+                left: 15%;
+                top: -5%;
+            }
+            &:nth-of-type(2) {
+                background-color: $dotColorPink;
+                left: 70%;
+                top: 2%;
+            }
+            &:nth-of-type(3) {
+                background-color: $dotColorRed;
+                left: 140%;
+                top: -3%;
+            }
+            &:nth-of-type(4) {
+                background-color: $dotColorRed;
+                left: 20%;
+                top: 15%;
+            }
+            &:nth-of-type(5) {
+                background-color: $dotColorYellow;
+                left: 115%;
+                top: 21%;
+            }
+            &:nth-of-type(6) {
+                background-color: $dotColorPink;
+                left: 117%;
+                top: 33%;
+            }
+            &:nth-of-type(7) {
+                background-color: $dotColorBlue;
+                left: 40%;
+                top: 37%;
+            }
+            &:nth-of-type(8) {
+                background-color: $dotColorBlue;
+                left: 148%;
+                top: 52%;
+            }
+            &:nth-of-type(9) {
+                background-color: $dotColorYellow;
+                left: 55%;
+                top: 60%;
+            }
+            &:nth-of-type(10) {
+                background-color: $dotColorRed;
+                left: 17%;
+                top: 72%;
+            }
+            &:nth-of-type(11) {
+                background-color: $dotColorPink;
+                left: 85%;
+                top: 75%;
+            }
+            &:nth-of-type(12) {
+                background-color: $dotColorBrown;
+                left: 140%;
+                top: 87%;
+            }
+            &:nth-of-type(13) {
+                background-color: $dotColorBrown;
+                left: 30%;
+                top: 92%;
+            }
+            &:nth-of-type(14) {
+                background-color: $dotColorRed;
+                left: 52%;
+                top: 100%;
+            }
+            &:nth-of-type(15) {
+                background-color: $dotColorYellow;
+                left: 97%;
+                top: 102%;
+            }
+            
+        }
+    }
+    .gifts-center {
+        h2 {
+            font-size: 50px;
+            text-transform: uppercase;
+            color: $navy-blue;
+            font-weight: 600;
+            display: inline-block;
+        }
+        &-timer {
+            padding-top: 17px;
+            &-text {
+                font-size: 20px;
+                color: $red;
+                font-style: italic;
+                font-weight: 300;
+            }
+            &-counter {
+                font-size: 60px;
+                line-height: 70px;
+                color: $red;
+                font-weight: 600;
+            }
+        }
+        .button-group {
+            padding-top: 20px;
+            button {
+                @include padding(5, 50, 5, 50);
+                @extend %button;
+                margin-right: 10px;
+                min-width: 200px;
+            }
+        }
+    }
+    .colorful-dots-right{
+        .dot{
+            @include commonDotSet(13, 13, absolute, -1);
+            &:nth-of-type(1){
+                background-color: $dotColorBlue;
+                right: 155%;
+                top: -5%;
+            }
+            &:nth-of-type(2){
+                background-color: $dotColorPink;
+                right: 80%;
+                top: 0%;
+            }
+            &:nth-of-type(3){
+                background-color: $dotColorPink;
+                right: 40%;
+                top: 5%;
+            }
+            &:nth-of-type(4){
+                background-color: $dotColorYellow;
+                right: 120%;
+                top: 15%;
+            }
+            &:nth-of-type(5){
+                background-color: $dotColorBrown;
+                right: 75%;
+                top: 25%;
+            }
+            &:nth-of-type(6){
+                background-color: $dotColorRed;
+                right: 145%;
+                top: 30%;
+            }
+            &:nth-of-type(7){
+                background-color: $dotColorBlue;
+                right: 25%;
+                top: 37%;
+            }
+            &:nth-of-type(8){
+                background-color: $dotColorRed;
+                right: 55;
+                top: 50%;
+            }
+            &:nth-of-type(9){
+                background-color: $dotColorBlue;
+                right: 165%;
+                top: 65%;
+            }
+            &:nth-of-type(10){
+                background-color: $dotColorBrown;
+                right: 125%;
+                top: 77%;
+            }
+            &:nth-of-type(11){
+                background-color: $dotColorPink;
+                right: 70%;
+                top: 79%;
+            }
+            &:nth-of-type(12){
+                background-color: $dotColorRed;
+                right: 22%;
+                top: 88%;
+            }
+            &:nth-of-type(13){
+                background-color: $dotColorRed;
+                right: 68%;
+                top: 97%;
+            }
+            &:nth-of-type(14){
+                background-color: $dotColorPink;
+                right: 107%;
+                top: 107%;
+            }
+        
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.sales-products-second{
+    .product{
+        text-align: center;
+        button{
+            margin-top: 5px;
+            @extend %button;
+            @include padding(5, 25, 5, 25);
+            min-width: 75%;
+        }
+        img{
+            object-fit: cover;
+        }
+    }
+}

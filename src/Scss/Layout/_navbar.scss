@@ -1,0 +1,103 @@
+._navbar {
+    @include padding(40, 10, 5, 50);
+    display: flex;
+    align-items: center;
+    &-title {
+        flex-grow: 1;
+        h1 {
+            font-weight: 700;
+            font-size: 23px;
+            padding-left: 15px;
+            color: $black;
+        }
+    }
+
+    &-categories {
+        @include flexBaseline();
+        flex-grow: 5;
+        &.active { // For Responsive
+            transform: translateX(0);
+        }
+        &.dNone{ //! Second Option the responsive view navbar
+            // display: none;
+        }
+        &-link {
+            display: block;
+            padding-right: 50px;
+            font-style: italic;
+            font-weight: 400;
+            color: $navy-blue;
+            opacity: 0.8;
+            @include transition(color, 0.3s ,ease);
+            &:hover {
+                color: $red;
+            };
+        }   
+    }
+
+    &-shop-items { //ul
+        @include flexBaseline();
+        padding-right: 20px;
+        &.active { //  Class For Responsive
+            transform: translateX(0);
+        }
+        &.dNone{ //! Second Option the responsive view navbar
+            // display: none;
+        }
+        &-link {
+            padding-right: 25px;
+            color: rgba(0, 0, 0, 0.582);
+            @include transition(color, .3s, ease);
+            &:hover {
+                color: $red;
+            }
+        }
+        &-link:nth-of-type(1) {
+            display: flex;
+            align-items: center;
+            .cargoo-text {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                font-size: 13px;
+                line-height: 16px;
+                :last-of-type {
+                    color:$navy-blue;
+                    font-weight: 300;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    &-menu-icon {
+        display: none;
+        cursor: pointer;
+        div {
+            width: 25px;
+            height: 3px;
+            background-color: $navy-blue;
+            margin: 5px;
+            @include transition(all, 0.3s, ease);
+        }
+    }
+};
+
+.bottom-line {
+    width: 97%;
+    margin: auto;
+    border: 1px solid rgba(128, 128, 128, 0.205);
+}
+
+// For Menu Icon Effect //
+.toggle {
+    .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .line2 {
+        opacity: 0;
+    }
+    .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+// For Menu Icon Effect End //
